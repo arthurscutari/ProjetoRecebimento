@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebimento</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <section class="section-container">
+        <div class="div-titulo">
+            <h1>Recebimento</h1>
+            <h4>Sistema de Avaliação de Performance</h2>
+        </div>
+        <form class="form-container" id="form">
+            <div class="grupo-form">
+                <label for="nomeMotorista">Nome do Motorista</label>
+                <input type="text" id="nomeMotorista" >
+            </div>
+            <div class="grupo-form">
+                <label for="volumetria">Volumetria</label>
+                <input type="text" id="volumetria" >
+            </div>
+            <div class="grupo-form">
+                <label for="tipoCarga">Tipo de carga</label>
+                <select name="" id="tipoCarga" >
+                    <option value="">Selecione</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Misto">Misto</option>
+                    <option value="Volumoso">Volumoso</option>
+                </select>
+            </div>
+            <div class="grupo-form">
+                <label for="doca">Doca</label>
+                <select name="" id="doca" >
+                    <option value="">Selecione</option>
+                    <option value="Doca 3">Doca 3</option>
+                    <option value="Doca 4">Doca 4</option>
+                    <option value="Doca 5">Doca 5</option>
+                    <option value="Doca 6">Doca 6</option>
+                    <option value="Doca 7">Doca 7</option>
+                    <option value="Doca 8">Doca 8</option>
+                    <option value="Doca 9">Doca 9</option>
+                    <option value="Doca 10">Doca 10</option>
+                    <option value="Doca 11">Doca 11</option>
+                    <option value="Doca 12">Doca 12</option>
+                </select>
+            </div>
+            <div class="grupo-form">
+                <label for="colaborador">Colaborador</label>
+                <select name="" id="colaborador">
+                    <option value="">Selecione</option >
+                    <option value="Colaborador 1">Colaborador 1</option>
+                    <option value="Colaborador 2">Colaborador 2</option>
+                    <option value="Colaborador 3">Colaborador 3</option>
+                    <option value="Colaborador 4">Colaborador 4</option>
+                    <option value="Colaborador 5">Colaborador 5</option>
+                    <option value="Colaborador 6">Colaborador 6</option>
+                    <option value="Colaborador 7">Colaborador 7</option>
+                    <option value="Colaborador 8">Colaborador 8</option>
+                    <option value="Colaborador 9">Colaborador 9</option>
+                    <option value="Colaborador 10">Colaborador 10</option>
+                </select>
+            </div>
+            <div class="grupo-form">
+                <label for="ausenciaPacote">Ausencia de pacote</label>
+                <select name="" id="ausenciaPacote" >
+                    <option value="">Selecione</option>
+                    <option value="Não">Não</option>
+                    <option value="Sim">Sim</option>
+                </select>
+            </div>
+            <div class="grupo-form">
+                <label for="qtdPacoteAusentes">Quantidade de pacotes ausentes</label>
+                <input type="text" id="qtdPacoteAusentes" >
+            </div>
+            <div class="grupo-form">
+                <label for="observacao">Observação</label>
+                <textarea name="" id="observacao"> </textarea >
+            </div>
+            <div class="grupo-form">
+                <button id="btnEnviar" class="botao-enviar">Enviar</button>
+            </div>
+            <div class="grupo-form">
+                <button id="btnDashboard" class="botao-dashboard">Dashboard</button>
+            </div>
+        </form> 
+        
+    </section>
+    <script src="/Script/index.js"></script>
+</body>
+</html>

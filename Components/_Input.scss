@@ -1,0 +1,96 @@
+label {
+    font-size: 14px;
+    margin: 5px 0px;
+    color: #113366;
+    font-weight: 400;
+}
+input {
+    height: 38px;
+    width:100%;
+    border: none;
+    outline: none;
+    border: 1px solid 	#EE4D2D;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+select {
+    height: 38px;
+    width:100%;
+    border: none;
+    outline: none;
+    border: 1px solid 	#EE4D2D;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 60px;
+    width:100%;
+    border: none;
+    outline: none;
+    border: 1px solid 	#EE4D2D;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.botao-enviar, .botao-dashboard {
+
+    background-color: #EE4D2D;
+    color: white;
+    height: 44px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.div-botao-voltar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+    .botao-voltar {
+
+        background-color: #EE4D2D;
+        color: white;
+        height: 44px;
+        width: 40%;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin:0;
+     
+    }
+
+}
+
+.dashboard-tabela-titulo {
+
+    font-weight: 700;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.header-tabela {
+
+    height: 100%;
+      width: 100%;
+      background-color:#EE4D2D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+
+      p {
+
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+      }
+}
