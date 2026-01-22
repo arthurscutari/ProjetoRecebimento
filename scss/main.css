@@ -1,1 +1,107 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat";
+  background-color: #EE4D2D;
+}
+
+header {
+  height: 10vh;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid gray;
+}
+header h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #EE4D2D;
+}
+header h4 {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #113366;
+  font-weight: 400;
+}
+
+main {
+  background-color: #fafafa;
+  height: 80vh;
+  width: 95vw;
+  border-radius: 0 0 5px 5px;
+  overflow-y: auto;
+}
+main .section-btn-recebimento {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+main .section-dashboard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .section-dashboard .div-titulo-dashboard {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+main .section-dashboard .div-titulo-dashboard h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #113366;
+  padding: 0;
+  margin: 0;
+}
+
+.div-cabecalho-dashboard {
+  background-color: #EE4D2D;
+  color: #fafafa;
+}
+
+.botao-principal {
+  height: 44px;
+  width: 280px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: #EE4D2D;
+  color: #fafafa;
+}
+
+.line-table {
+  height: 36px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-cell {
+  height: 44px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-cell p {
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}/*# sourceMappingURL=main.css.map */

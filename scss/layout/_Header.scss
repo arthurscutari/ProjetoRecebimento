@@ -1,0 +1,30 @@
+@use "../base/Variabels" as *;
+
+header {
+
+    height: 10vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color-surface;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid gray;
+    h1{
+
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        color: $color-background;
+    }
+    h4{
+
+        font-size: 12px;
+        margin: 0;
+        padding: 0; 
+        color: $color-font;
+        font-weight: 400;
+
+    }
+}

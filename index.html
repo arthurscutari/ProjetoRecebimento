@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recebimento — Cadastro Operacional</title>
-    <link rel="stylesheet" href="../Projeto Recebimento/scss/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>  
-        <header>
-            <h1>Gestão de Recebimento</h1>
-            <h4>Acompanhamento de Produtividade</h4>
-        </header>
+
+<body>
+    <header>
+        <h1>Gestão de Recebimento</h1>
+        <h4>Acompanhamento de Produtividade</h4>
+    </header>
     <main>
-       
+
         <section class="section-btn-recebimento">
-            <button id="btn-novo-recebimento">Novo Recebimento</button>
+            <button id="btn-novo-recebimento" class="botao-principal">Novo Recebimento</button>
         </section>
-       <section>
-            <h4>Status das Docas</h4>
-            <div class="div-cabecalho-tabela">
-                <div class="">
+        <section class="section-dashboard">
+            <div class="div-titulo-dashboard">
+                <h4>Status das Docas</h4>
+            </div>
+            <div class="div-cabecalho-dashboard line-table">
+
+                <div class="card-cell">
                     <p>Doca</p>
                 </div>
-                <div class="">
+                
+                <div class="card-cell">
                     <p>Pacotes</p>
                 </div>
-                <div class="">
+                
+                <div class="card-cell">
                     <p>Ausentes</p>
                 </div>
-                <div class="">
+                
+                <div class="card-cell">
                     <p>Eficiência</p>
                 </div>
+              
+              
             </div>
-       </section>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 1</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 2</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0</p>
+                </div>
+                
+                <div class="card-cell">
+                    <p>0%</p>
+                </div>
+            </div>
+        </section>
     </main>
-     <div class="modal-overlay">
-            <div class="modal-formulario">
+    <div class="modal-overlay">
+        <div class="modal-formulario">
 
-            </div>
+        </div>
     </div>
 </body>
+
 </html>

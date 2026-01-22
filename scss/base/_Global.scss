@@ -1,0 +1,10 @@
+@use "./Variabels" as *;
+
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat";
+    background-color: $color-background;
+}
