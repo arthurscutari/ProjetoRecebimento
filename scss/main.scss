@@ -6,9 +6,10 @@
 @use "./layout/Header";
 @use "./layout/Container";
 @use "./layout/Dashboard";
-
+@use "./layout/Modal";
 //Componentes
 
 @use "./components/Button";
 @use "./components/LineTable";
 @use "./components/Card";
+@use "./components/Inputs"

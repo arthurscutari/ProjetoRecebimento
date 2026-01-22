@@ -1,0 +1,82 @@
+@use "../base/Variabels" as *;
+.modal-overlay {
+  height: 70vh;
+  width: 85vw;
+  background-color: $color-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .div-modal {
+    background-color: $color-surface;
+    height: 90%;
+    width: 95%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .div-close {
+      height: 5%;
+      width: 100%;
+      padding-right: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .div-title-form {
+      height: 10%;
+      width: 70%;
+        text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        color: $color-background;
+        margin: 5px 0;
+      }
+      h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 11px;
+        color: $color-font;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+     
+    }
+    .form-new {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .div-btn-enviar{
+
+            height: 20%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+      }
+  }
+}
+
+.modal-overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}

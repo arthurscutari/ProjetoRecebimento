@@ -7,4 +7,11 @@ body {
     width: 100vw;
     font-family: "Montserrat";
     background-color: $color-background;
+    overflow: hidden;
+
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
 }

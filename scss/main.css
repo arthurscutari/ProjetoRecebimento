@@ -3,6 +3,11 @@ body {
   width: 100vw;
   font-family: "Montserrat";
   background-color: #EE4D2D;
+  overflow: hidden;
+}
+body p {
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -73,6 +78,86 @@ main .section-dashboard .div-titulo-dashboard h4 {
   color: #fafafa;
 }
 
+.modal-overlay {
+  height: 70vh;
+  width: 85vw;
+  background-color: #EE4D2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay .div-modal {
+  background-color: #fafafa;
+  height: 90%;
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-overlay .div-modal .div-close {
+  height: 5%;
+  width: 100%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal-overlay .div-modal .div-title-form {
+  height: 10%;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-overlay .div-modal .div-title-form h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #EE4D2D;
+  margin: 5px 0;
+}
+.modal-overlay .div-modal .div-title-form h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+  color: #113366;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.modal-overlay .div-modal .form-new {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-overlay .div-modal .form-new .div-btn-enviar {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.modal-overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
 .botao-principal {
   height: 44px;
   width: 280px;
@@ -82,6 +167,14 @@ main .section-dashboard .div-titulo-dashboard h4 {
   border: none;
   background-color: #EE4D2D;
   color: #fafafa;
+}
+
+.btn-enviar {
+  background-color: #EE4D2D;
+  height: 42px;
+  width: 100%;
+  color: #fafafa;
+  border: none;
 }
 
 .line-table {
@@ -104,4 +197,30 @@ main .section-dashboard .div-titulo-dashboard h4 {
   padding: 0;
   margin: 0;
   font-weight: 500;
+}
+
+.card-input {
+  height: 18%;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 7px 0;
+}
+.card-input label {
+  height: 25%;
+  font-size: 11px;
+  color: #113366;
+  padding-left: 10px;
+}
+
+.input-geral {
+  border: none;
+  border: 1px solid #EE4D2D;
+  height: 55%;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  outline: none;
 }/*# sourceMappingURL=main.css.map */

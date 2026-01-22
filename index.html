@@ -21,7 +21,7 @@
     <main>
 
         <section class="section-btn-recebimento">
-            <button id="btn-novo-recebimento" class="botao-principal">Novo Recebimento</button>
+            <button id="btn-open-modal" class="botao-principal">Novo Recebimento</button>
         </section>
         <section class="section-dashboard">
             <div class="div-titulo-dashboard">
@@ -83,11 +83,39 @@
             </div>
         </section>
     </main>
-    <div class="modal-overlay">
-        <div class="modal-formulario">
-
+    <div class="modal-overlay" aria-hidden="true">
+        <div class="div-modal">
+            <div class="div-close">
+                <p id="btn-close-modal">x</p>
+            </div>
+            <div class="div-title-form">
+                <h3>Registro de Recebimento</h3>
+                <h4>Preencha os campos com os dados corretamente</h4>
+            </div>
+            <form action="" class="form-new">
+                <div class="card-input">
+                    <label for="docas">Doca</label>
+                    <select name="" id="docas" class="input-geral">
+                        <option value="">Selecione</option>
+                        <option value="Doca 1">Doca 1</option>
+                            <option value="Doca 2">Doca 2</option>
+                    </select>
+                </div>
+                  <div class="card-input">
+                    <label for="docas">Pacote</label>
+                    <input type="text" class="input-geral">
+                </div>
+                 <div class="card-input">
+                    <label for="docas">Ausentes</label>
+                    <input type="text" class="input-geral">
+                </div>
+                <div class="div-btn-enviar">
+                    <button class="btn-enviar">Enviar</button>
+                </div>
+            </form>
         </div>
     </div>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
