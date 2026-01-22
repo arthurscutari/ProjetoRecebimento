@@ -8,8 +8,10 @@ body {
     font-family: "Montserrat";
     background-color: $color-background;
     overflow: hidden;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     p{
         padding: 0;
         margin: 0;

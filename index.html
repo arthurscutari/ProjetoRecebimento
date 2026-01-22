@@ -15,14 +15,15 @@
 
 <body>
     <header>
-        <h1>Gestão de Recebimento</h1>
-        <h4>Acompanhamento de Produtividade</h4>
+        <div class="div-title-header">
+            <h1>Gestão de Recebimento</h1>
+            <h4>Acompanhamento de Produtividade</h4>
+        </div>
+        <div class="div-btn-header">
+            <button id="btn-open-modal" class="botao-principal">Novo Recebimento</button>
+        </div>
     </header>
     <main>
-
-        <section class="section-btn-recebimento">
-            <button id="btn-open-modal" class="botao-principal">Novo Recebimento</button>
-        </section>
         <section class="section-dashboard">
             <div class="div-titulo-dashboard">
                 <h4>Status das Docas</h4>
@@ -32,34 +33,34 @@
                 <div class="card-cell">
                     <p>Doca</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>Pacotes</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>Ausentes</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>Eficiência</p>
                 </div>
-              
-              
+
+
             </div>
             <div class="line-table">
                 <div class="card-cell">
                     <p>Doca 1</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0%</p>
                 </div>
@@ -68,22 +69,21 @@
                 <div class="card-cell">
                     <p>Doca 2</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0</p>
                 </div>
-                
+
                 <div class="card-cell">
                     <p>0%</p>
                 </div>
             </div>
         </section>
-    </main>
-    <div class="modal-overlay" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true">
         <div class="div-modal">
             <div class="div-close">
                 <p id="btn-close-modal">x</p>
@@ -98,14 +98,14 @@
                     <select name="" id="docas" class="input-geral">
                         <option value="">Selecione</option>
                         <option value="Doca 1">Doca 1</option>
-                            <option value="Doca 2">Doca 2</option>
+                        <option value="Doca 2">Doca 2</option>
                     </select>
                 </div>
-                  <div class="card-input">
+                <div class="card-input">
                     <label for="docas">Pacote</label>
                     <input type="text" class="input-geral">
                 </div>
-                 <div class="card-input">
+                <div class="card-input">
                     <label for="docas">Ausentes</label>
                     <input type="text" class="input-geral">
                 </div>
@@ -115,6 +115,8 @@
             </form>
         </div>
     </div>
+    </main>
+    
     <script src="./js/form.js"></script>
 </body>
 
