@@ -35,7 +35,7 @@ header .div-title-header {
 }
 header .div-title-header h1 {
   font-size: 18px;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   color: #EE4D2D;
 }
@@ -91,24 +91,33 @@ main .section-dashboard .div-titulo-dashboard h4 {
 }
 
 .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-overlay .div-modal-background {
   height: 70vh;
   width: 85vw;
   background-color: #EE4D2D;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.modal-overlay .div-modal {
-  background-color: #fafafa;
-  height: 90%;
-  width: 95%;
   border-radius: 5px;
+}
+.modal-overlay .div-modal-background .div-modal {
+  background-color: #fafafa;
+  height: 95%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.modal-overlay .div-modal .div-close {
+.modal-overlay .div-modal-background .div-modal .div-close {
   height: 5%;
   width: 100%;
   padding-right: 10px;
@@ -117,7 +126,7 @@ main .section-dashboard .div-titulo-dashboard h4 {
   align-items: center;
   justify-content: flex-end;
 }
-.modal-overlay .div-modal .div-title-form {
+.modal-overlay .div-modal-background .div-modal .div-title-form {
   height: 10%;
   width: 70%;
   text-align: center;
@@ -126,14 +135,14 @@ main .section-dashboard .div-titulo-dashboard h4 {
   justify-content: center;
   flex-direction: column;
 }
-.modal-overlay .div-modal .div-title-form h3 {
+.modal-overlay .div-modal-background .div-modal .div-title-form h3 {
   padding: 0;
   margin: 0;
   font-size: 14px;
   color: #EE4D2D;
   margin: 5px 0;
 }
-.modal-overlay .div-modal .div-title-form h4 {
+.modal-overlay .div-modal-background .div-modal .div-title-form h4 {
   padding: 0;
   margin: 0;
   font-size: 11px;
@@ -141,14 +150,14 @@ main .section-dashboard .div-titulo-dashboard h4 {
   font-weight: 500;
   margin-bottom: 5px;
 }
-.modal-overlay .div-modal .form-new {
+.modal-overlay .div-modal-background .div-modal .form-new {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.modal-overlay .div-modal .form-new .div-btn-enviar {
+.modal-overlay .div-modal-background .div-modal .form-new .div-btn-enviar {
   height: 20%;
   width: 80%;
   display: flex;
@@ -157,17 +166,8 @@ main .section-dashboard .div-titulo-dashboard h4 {
   margin: 10px 0;
 }
 
-.modal-overlay {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
+.hidden {
+  display: none;
 }
 
 .botao-principal {
@@ -225,6 +225,7 @@ main .section-dashboard .div-titulo-dashboard h4 {
   font-size: 11px;
   color: #113366;
   padding-left: 10px;
+  font-weight: 600;
 }
 
 .input-geral {

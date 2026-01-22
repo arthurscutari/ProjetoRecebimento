@@ -1,16 +1,29 @@
 @use "../base/Variabels" as *;
 .modal-overlay {
+    
+  position: fixed;
+  inset: 0; // ocupa 100% da viewport
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+
+.div-modal-background {
   height: 70vh;
   width: 85vw;
   background-color: $color-background;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+
+
   .div-modal {
     background-color: $color-surface;
-    height: 90%;
+    height: 95%;
     width: 95%;
-    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +40,7 @@
     .div-title-form {
       height: 10%;
       width: 70%;
-        text-align: center;
+      text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,6 +51,7 @@
         margin: 0;
         font-size: 14px;
         color: $color-background;
+       
         margin: 5px 0;
       }
       h4 {
@@ -48,35 +62,28 @@
         font-weight: 500;
         margin-bottom: 5px;
       }
-     
     }
     .form-new {
-        height: 100%;
-        width: 100%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .div-btn-enviar {
+        height: 20%;
+        width: 80%;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        .div-btn-enviar{
-
-            height: 20%;
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
-        }
+        justify-content: center;
+        margin: 10px 0;
       }
+    }
   }
 }
-
-.modal-overlay {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
 }
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
+
+.hidden {
+
+    display: none;
+    
 }
