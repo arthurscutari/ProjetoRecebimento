@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">      
 </head>
 
 <body>
@@ -19,9 +19,40 @@
             <h1>Gestão de Recebimento</h1>
             <h4>Acompanhamento de Produtividade</h4>
         </div>
-        <div class="div-btn-header">
-            <button id="btn-open-modal" class="botao-principal">Novo Recebimento</button>
+         <div class="div-all-status">
+            <div class="div-container-status green">
+                <div class="div-image-status ">
+                    <img src="./assets/iconePacotes.svg" alt="Icone pacotes recebidos">
+                </div>
+                <div class="div-title-status">
+                    <p id="total-pacotes">0</p>
+                </div>
+            </div>
+              <div class="div-container-status orange">
+                <div class="div-image-status">
+                    <img src="./assets/iconeAusentes.svg" alt="Icone pacotes recebidos">
+                </div>
+                <div class="div-title-status">
+                    <p id="total-ausentes">0</p>
+                </div>
+            </div>
+              <div class="div-container-status blue">
+                <div class="div-image-status">
+                    <img src="./assets/iconDoca.svg" alt="Icone pacotes recebidos">
+                </div>
+                <div class="div-title-status">
+                    <p>10</p>
+                </div>
+            </div>
+         
         </div>
+        <div class="div-btn-header">
+            <button id="btn-open-modal" class="botao-principal">
+                <img src="./assets/iconeADD.svg" alt="">
+                <p>Novo recebimento</p>
+                </button>
+        </div>
+       
     </header>
     <main>
         <section class="section-dashboard">
@@ -54,15 +85,15 @@
                 </div>
 
                 <div class="card-cell">
-                    <p>0</p>
+                    <p id="qtd-pacote-1">0</p>
                 </div>
 
                 <div class="card-cell">
-                    <p>0</p>
+                    <p id="qtd-ausente-1">0</p>
                 </div>
 
                 <div class="card-cell">
-                    <p>0%</p>
+                    <p id="eficiencia-1">0%</p>
                 </div>
             </div>
             <div class="line-table">
@@ -71,15 +102,151 @@
                 </div>
 
                 <div class="card-cell">
-                    <p>0</p>
+                    <p id="qtd-pacote-2">0</p>
                 </div>
 
                 <div class="card-cell">
-                    <p>0</p>
+                    <p id="qtd-ausente-2">0</p>
                 </div>
 
                 <div class="card-cell">
-                    <p>0%</p>
+                    <p id="eficiencia-2">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 3</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-3">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-3">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-3">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 4</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-4">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-4">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-4">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 5</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-5">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-5">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-5">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 6</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-6">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-6">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-6">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 7</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-7">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-7">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-7">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 8</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-8">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-8">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-8">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 9</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-9">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-9">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-9">0%</p>
+                </div>
+            </div>
+            <div class="line-table">
+                <div class="card-cell">
+                    <p>Doca 10</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-pacote-10">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="qtd-ausente-10">0</p>
+                </div>
+
+                <div class="card-cell">
+                    <p id="eficiencia-10">0%</p>
                 </div>
             </div>
         </section>
@@ -87,7 +254,7 @@
             <div class="div-modal-background">
                 <div class="div-modal">
                     <div class="div-close">
-                        <p id="btn-close-modal">x</p>
+                        <img src="./assets/iconeClose.svg" alt="Icone para fechar o formulário" id="btn-close-modal">
                     </div>
                     <div class="div-title-form">
                         <h3>Registro de Recebimento</h3>
@@ -98,8 +265,16 @@
                             <label for="select-doca">Doca</label>
                             <select name="" id="select-doca" class="input-geral">
                                 <option value="">Selecione</option>
-                                <option value="Doca 1">Doca 1</option>
-                                <option value="Doca 2">Doca 2</option>
+                                <option value="1">Doca 1</option>
+                                <option value="2">Doca 2</option>
+                                <option value="3">Doca 3</option>
+                                <option value="4">Doca 4</option>
+                                <option value="5">Doca 5</option>
+                                <option value="6">Doca 6</option>
+                                <option value="7">Doca 7</option>
+                                <option value="8">Doca 8</option>
+                                <option value="9">Doca 9</option>
+                                <option value="10">Doca 10</option>
                             </select>
                         </div>
                         <div class="card-input">
@@ -121,6 +296,7 @@
     
     <script src="./js/form.js"></script>
     <script src="./js/navigation.js"></script>
+       <script src="./js/show.js"></script>
 </body>
 
 </html>

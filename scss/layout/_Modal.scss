@@ -13,7 +13,7 @@
 .div-modal-background {
   height: 70vh;
   width: 85vw;
-  background-color: $color-background;
+  background-color: $color-surface;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +36,10 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      img {
+        fill: $color-font;
+      }
     }
     .div-title-form {
       height: 10%;

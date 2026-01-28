@@ -2,6 +2,9 @@
 
 .botao-principal {
 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     height: 44px;
     width: 280px;
     padding: 14px 20px;
