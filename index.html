@@ -249,6 +249,9 @@
                     <p id="eficiencia-10">0%</p>
                 </div>
             </div>
+            <div>
+                <button id="btn-resetar-baco" class= "botao-principal" >Resetar banco</button>
+            </div>
         </section>
         <div class="modal-overlay hidden">
             <div class="div-modal-background">
@@ -279,11 +282,11 @@
                         </div>
                         <div class="card-input">
                             <label for="qtd-pacotes">Pacotes</label>
-                            <input type="text" class="input-geral" id="qtd-pacotes">
+                            <input type="text" class="input-geral" id="qtd-pacotes" inputmode="numeric" maxlength="7">
                         </div>
                         <div class="card-input">
                             <label for="qtd-ausentes">Ausentes</label>
-                            <input type="text" class="input-geral" id="qtd-ausentes">
+                            <input type="text" class="input-geral" id="qtd-ausentes" inputmode="numeric" maxlength="7">
                         </div>
                         <div class="div-btn-enviar">
                             <button class="btn-enviar" id="btn-registrar">Enviar</button>

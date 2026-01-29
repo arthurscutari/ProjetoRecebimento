@@ -314,4 +314,23 @@ console.log(pacotesTotaisAusentes)
 
 // Código para pegar todos os valores de pacotes e ausentes e mostrar na tela
 
+const inputsNumericos = document.querySelectorAll(".input-geral");
 
+inputsNumericos.forEach(input => {
+  input.addEventListener("input", () => {
+    input.value = input.value.replace(/\D/g, "");
+  });
+});
+
+// Código para resetar o banco de dados
+
+const btnResetar = document.getElementById("btn-resetar-baco");
+
+btnResetar.addEventListener('click', () =>{
+
+    resetarBancoMotoristas();
+})
+
+function resetarBancoMotoristas() {
+  localStorage.removeItem("motoristas");
+}
