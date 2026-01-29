@@ -5,7 +5,9 @@ const btnFecharModal = document.getElementById("btn-close-modal");
 
 const modal = document.querySelector(".modal-overlay")
 
-atualizarDashboard()
+document.addEventListener("DOMContentLoaded", () => {
+  atualizarDashboard();
+});
 
 
 function abrirModal () {
@@ -288,10 +290,6 @@ eficienca7.textContent =  eficienciaDoca7.toFixed(1) + "%";
 eficienca8.textContent =  eficienciaDoca8.toFixed(1) + "%";
 eficienca9.textContent =  eficienciaDoca9.toFixed(1) + "%";
 eficienca10.textContent =  eficienciaDoca10.toFixed(1) + "%";
-}
-
-// Código para pegar todos os valores de pacotes e ausentes e mostrar na tela
-
 
 const totalPacotesRecebidos = document.getElementById("total-pacotes");
 const totalAusentesRecebidos = document.getElementById("total-ausentes");
@@ -311,4 +309,9 @@ totalAusentesRecebidos.textContent = pacotesTotaisAusentes
 
 console.log(pacotesTotaisRecebidos)
 console.log(pacotesTotaisAusentes)
+
+}
+
+// Código para pegar todos os valores de pacotes e ausentes e mostrar na tela
+
 
