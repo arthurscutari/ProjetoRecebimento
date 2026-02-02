@@ -1,6 +1,9 @@
 @use "../base/Variabels" as *;
 
 header {
+    position: sticky;
+     top: 0;
+       z-index: 1000;
   padding: 15px;
   box-sizing: border-box;
   gap: 5px;
