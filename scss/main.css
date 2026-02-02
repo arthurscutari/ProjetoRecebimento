@@ -15,8 +15,11 @@ body p {
 }
 
 header {
-  height: 30%;
-  width: 90%;
+  padding: 15px;
+  box-sizing: border-box;
+  gap: 5px;
+  height: 45%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,113 +27,109 @@ header {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-header .div-btn-header {
-  height: 30%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .div-all-status {
+header .div-container-status {
+  flex: 1;
   height: 50%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-header .div-all-status .div-container-status {
-  height: 45%;
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-header .div-all-status .div-container-status .div-image-status {
+header .div-container-status .div-image-status {
   height: 100%;
-  width: 44px;
+  width: 60px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .div-all-status .div-container-status .div-image-status svg {
-  height: 22px;
-  width: 22px;
+header .div-container-status .div-image-status svg {
+  height: 28px;
+  width: 28px;
   color: #fff;
 }
-header .div-all-status .div-container-status .div-title-status {
+header .div-container-status .div-title-status {
   height: 100%;
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
-header .div-all-status .div-container-status .div-title-status p {
-  font-size: 10px;
+header .div-container-status .div-title-status p {
+  font-size: 16px;
   color: #fff;
   margin: 0;
   padding: 0;
   font-weight: 400;
 }
-header .div-all-status .div-container-status .div-title-status h3 {
-  font-size: 14px;
+header .div-container-status .div-title-status h3 {
+  font-size: 18px;
   color: #fff;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 700;
 }
-header .div-all-status .div-status-doca-ausente {
-  height: 45%;
+header .div-status-doca-ausente {
+  flex: 1;
+  height: 50%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente {
+header .div-status-doca-ausente .div-container-doca-ausente {
   height: 100%;
-  width: 49.5%;
+  width: 50%;
   display: flex;
   align-items: center;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente {
-  width: 44px;
+header .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente {
+  width: 60px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente svg {
-  height: 22px;
-  width: 22px;
+header .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente svg {
+  height: 28px;
+  width: 28px;
   color: #fff;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info {
-  width: auto;
+header .div-status-doca-ausente .div-container-doca-ausente .div-status-info {
   height: 100%;
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info p {
-  font-size: 10px;
+header .div-status-doca-ausente .div-container-doca-ausente .div-status-info p {
+  font-size: 16px;
   color: #fff;
   margin: 0;
   padding: 0;
   font-weight: 400;
 }
-header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info h3 {
-  font-size: 14px;
+header .div-status-doca-ausente .div-container-doca-ausente .div-status-info h3 {
+  font-size: 18px;
   color: #fff;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 700;
+}
+header .div-btn-header {
+  flex: 1;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header .green {
   background-color: #00b894;
@@ -300,14 +299,14 @@ main .dashboard {
 }
 .card-input label {
   height: 25%;
-  font-size: 11px;
+  font-size: 16px;
   color: #113366;
   padding-left: 10px;
   font-weight: 600;
 }
 
 .dashboard-card {
-  height: 44px;
+  height: 65px;
   width: 95%;
   background-color: #fff;
   display: flex;
@@ -317,7 +316,7 @@ main .dashboard {
 }
 .dashboard-card .dashboard-card-doca {
   height: 100%;
-  width: 70px;
+  width: 100px;
   display: flex;
   background-color: #0984E3;
 }
@@ -352,8 +351,8 @@ main .dashboard {
   padding: 0;
   margin: 0;
   color: #fff;
-  font-weight: 700;
-  font-size: 9px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info .dashboard-card-doca-info {
   height: 50%;
@@ -396,7 +395,7 @@ main .dashboard {
   flex-direction: column;
 }
 .dashboard-card .dashboard-card-info .dashboard-card-info-container {
-  height: 40%;
+  height: 48%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -405,12 +404,12 @@ main .dashboard {
 }
 .dashboard-card .dashboard-card-info .dashboard-card-info-container svg {
   color: #113366;
-  height: 13px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   box-sizing: border-box;
 }
 .dashboard-card .dashboard-card-info .dashboard-card-info-container p {
-  font-size: 11px;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   color: #113366;
@@ -420,10 +419,11 @@ main .dashboard {
 .dashboard-card .dashboard-card-info .dashboard-card-info-container h5 {
   padding: 0;
   margin: 0;
-  font-size: 9px;
+  font-size: 16px;
   text-align: center;
   color: #113366;
   width: 70px;
+  font-weight: 400;
 }
 .dashboard-card .dashboard-card-eficiencia {
   height: 100%;

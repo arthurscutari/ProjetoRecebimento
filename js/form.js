@@ -309,8 +309,6 @@ banco.forEach(item => {
 totalPacotesRecebidos.textContent = pacotesTotaisRecebidos 
 totalAusentesRecebidos.textContent = pacotesTotaisAusentes 
 
-console.log(pacotesTotaisRecebidos)
-console.log(pacotesTotaisAusentes)
 
 }
 

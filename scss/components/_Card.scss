@@ -15,7 +15,7 @@
     label
     {
         height: 25%;
-        font-size: 11px;
+        font-size: 16px;
         color: $color-font;
         padding-left: 10px;
          font-weight: 600;
@@ -25,7 +25,7 @@
 
 .dashboard-card {
 
-    height: 44px;
+    height: 65px;
     width: 95%;
     background-color: #fff;  
     display: flex;
@@ -34,7 +34,7 @@
     box-sizing: border-box;
     .dashboard-card-doca {
         height: 100%;
-        width: 70px ;
+        width: 100px ;
         display: flex;
         background-color: #0984E3;
          .dashboard-card-doca-icone {
@@ -73,8 +73,8 @@
                     padding: 0;
                     margin: 0;
                     color: $color-white;
-                    font-weight: 700;
-                    font-size: 9px;
+                    font-weight: 400;
+                    font-size: 16px;
                 }
             }
             .dashboard-card-doca-info {
@@ -125,23 +125,23 @@
         flex-direction: column;
 
         .dashboard-card-info-container {
-            height: 40%;
+            height: 48%;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content:center;
-             box-sizing: border-box;
+            box-sizing: border-box;
 
             svg {
                 color: $color-font;
-                  height: 13px;
-                   width: 20px;
+                  height: 18px;
+                   width: 18px;
                 box-sizing: border-box;
                 
             }
             p
             {
-                font-size: 11px;
+                font-size: 16px;
                 padding: 0;
                 margin: 0;
                 color: $color-font;
@@ -151,10 +151,11 @@
             h5{
                 padding: 0;
                 margin: 0;           
-                font-size: 9px;
+                font-size: 16px;
                 text-align: center;
                 color: $color-font;
                 width: 70px;
+                font-weight: 400;
             }
         }
     }
