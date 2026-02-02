@@ -280,6 +280,7 @@ if (qtdTotalPacotes10 > 0) {
 
 }
 
+
 eficienca1.textContent =  eficienciaDoca1.toFixed(1) + "%";
 eficienca2.textContent =  eficienciaDoca2.toFixed(1) + "%";
 eficienca3.textContent =  eficienciaDoca3.toFixed(1) + "%";
@@ -290,6 +291,7 @@ eficienca7.textContent =  eficienciaDoca7.toFixed(1) + "%";
 eficienca8.textContent =  eficienciaDoca8.toFixed(1) + "%";
 eficienca9.textContent =  eficienciaDoca9.toFixed(1) + "%";
 eficienca10.textContent =  eficienciaDoca10.toFixed(1) + "%";
+
 
 const totalPacotesRecebidos = document.getElementById("total-pacotes");
 const totalAusentesRecebidos = document.getElementById("total-ausentes");
@@ -334,3 +336,4 @@ btnResetar.addEventListener('click', () =>{
 function resetarBancoMotoristas() {
   localStorage.removeItem("motoristas");
 }
+

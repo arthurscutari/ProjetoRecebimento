@@ -317,7 +317,7 @@ main .dashboard {
 }
 .dashboard-card .dashboard-card-doca {
   height: 100%;
-  width: 20%;
+  width: 70px;
   display: flex;
   background-color: #0984E3;
 }
