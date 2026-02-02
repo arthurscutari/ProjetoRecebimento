@@ -1,8 +1,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  font-family: "Montserrat";
-  background-color: #fafafa;
+  font-family: "Roboto";
+  background-color: rgb(232, 230, 230);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -21,128 +21,146 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fafafa;
-  border-radius: 5px 5px 0 0;
-}
-header .div-title-header {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-bottom: 1px solid gray;
-}
-header .div-title-header h1 {
-  font-size: 18px;
-  margin: 5px 0;
-  padding: 0;
-  color: #EE4D2D;
-}
-header .div-title-header h4 {
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
-  color: #113366;
-  font-weight: 400;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 header .div-btn-header {
-  height: 50%;
-  width: 100%;
+  height: 30%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid gray;
 }
 header .div-all-status {
   height: 50%;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid gray;
+  flex-direction: column;
 }
 header .div-all-status .div-container-status {
-  height: 70%;
-  width: 30%;
+  height: 45%;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 2px;
+  align-items: flex-start;
+  justify-content: center;
 }
 header .div-all-status .div-container-status .div-image-status {
   height: 100%;
-  width: 40%;
+  width: 44px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .div-all-status .div-container-status .div-image-status img {
-  height: 70%;
-  width: 60%;
+header .div-all-status .div-container-status .div-image-status svg {
+  height: 22px;
+  width: 22px;
+  color: #fff;
 }
 header .div-all-status .div-container-status .div-title-status {
   height: 100%;
-  width: 60%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 header .div-all-status .div-container-status .div-title-status p {
-  font-size: 18px;
-  color: #fafafa;
+  font-size: 10px;
+  color: #fff;
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
-
-.green {
+header .div-all-status .div-container-status .div-title-status h3 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+header .div-all-status .div-status-doca-ausente {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente {
+  height: 100%;
+  width: 49.5%;
+  display: flex;
+  align-items: center;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente {
+  width: 44px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-image-status-doca-ausente svg {
+  height: 22px;
+  width: 22px;
+  color: #fff;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info p {
+  font-size: 10px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+header .div-all-status .div-status-doca-ausente .div-container-doca-ausente .div-status-info h3 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+header .green {
   background-color: #00b894;
 }
-
-.orange {
+header .orange {
   background-color: #e17055;
 }
-
-.blue {
+header .blue {
   background-color: #0984e3;
 }
 
 main {
-  background-color: #fafafa;
+  background-color: rgb(232, 230, 230);
   height: 80%;
   width: 95%;
-  border-radius: 0 0 5px 5px;
   overflow-y: auto;
+  border-top: 1px solid rgb(203, 203, 203);
+  margin-top: 15px;
+  padding-top: 15px;
 }
-main .section-dashboard {
-  height: 100%;
-  width: 100%;
+main .dashboard {
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-main .section-dashboard .div-titulo-dashboard {
-  height: 5%;
-  width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
-}
-main .section-dashboard .div-titulo-dashboard h4 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #113366;
-  padding: 0;
-  margin: 0;
 }
 
 .div-cabecalho-dashboard {
   background-color: #EE4D2D;
-  color: #fafafa;
+  color: #bdc3c7;
 }
 
 .modal-overlay {
@@ -157,14 +175,14 @@ main .section-dashboard .div-titulo-dashboard h4 {
 .modal-overlay .div-modal-background {
   height: 70vh;
   width: 85vw;
-  background-color: #fafafa;
+  background-color: #bdc3c7;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
 }
 .modal-overlay .div-modal-background .div-modal {
-  background-color: #fafafa;
+  background-color: #bdc3c7;
   height: 95%;
   width: 95%;
   display: flex;
@@ -231,45 +249,44 @@ main .section-dashboard .div-titulo-dashboard h4 {
 .botao-principal {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 44px;
-  width: 280px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   padding: 14px 20px;
   font-size: 16px;
   font-weight: 500;
   border: none;
   background-color: #EE4D2D;
-  color: #fafafa;
+  color: #fff;
+}
+.botao-principal svg {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
 }
 
 .btn-enviar {
   background-color: #EE4D2D;
   height: 42px;
   width: 100%;
-  color: #fafafa;
+  color: #bdc3c7;
   border: none;
 }
 
-.line-table {
-  height: 36px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.div-dashboard-btn-resetar {
+  background-color: #EE4D2D;
+  height: 42px;
+  width: 95%;
+  color: #bdc3c7;
+  border: none;
 }
 
-.card-cell {
-  height: 44px;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-cell p {
-  font-size: 11px;
-  padding: 0;
-  margin: 0;
-  font-weight: 500;
+.btn-resetar {
+  background-color: #EE4D2D;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 100%;
 }
 
 .card-input {
@@ -287,6 +304,143 @@ main .section-dashboard .div-titulo-dashboard h4 {
   color: #113366;
   padding-left: 10px;
   font-weight: 600;
+}
+
+.dashboard-card {
+  height: 44px;
+  width: 95%;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-sizing: border-box;
+}
+.dashboard-card .dashboard-card-doca {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  background-color: #0984E3;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-icone svg {
+  height: 70%;
+  width: 70%;
+  color: white;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info .dashboard-card-doca-title {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info .dashboard-card-doca-title p {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 9px;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info .dashboard-card-doca-info {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-doca-title-info .dashboard-card-doca-info h5 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-info {
+  height: 100%;
+  width: 70%;
+  background-color: blue;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-eficiencia {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-card .dashboard-card-doca .dashboard-card-eficiencia p {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  color: #113366;
+}
+.dashboard-card .dashboard-card-info {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dashboard-card .dashboard-card-info .dashboard-card-info-container {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.dashboard-card .dashboard-card-info .dashboard-card-info-container svg {
+  color: #113366;
+  height: 13px;
+  width: 20px;
+  box-sizing: border-box;
+}
+.dashboard-card .dashboard-card-info .dashboard-card-info-container p {
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  color: #113366;
+  width: 44px;
+  text-align: center;
+}
+.dashboard-card .dashboard-card-info .dashboard-card-info-container h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 9px;
+  text-align: center;
+  color: #113366;
+  width: 70px;
+}
+.dashboard-card .dashboard-card-eficiencia {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #113366;
+}
+.dashboard-card .dashboard-card-eficiencia p {
+  color: #113366;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .input-geral {

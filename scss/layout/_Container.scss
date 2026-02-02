@@ -1,33 +1,20 @@
 @use "../base/Variabels" as *;
 
-main {
-  background-color:  $color-surface;
+main {  
+  background-color: rgb(232, 230, 230);
   height: 80%;
   width: 95%;
-  border-radius: 0 0 5px 5px;
   overflow-y: auto;
-
-  .section-dashboard {
-    height: 100%;
-    width: 100%;
+  border-top: 1px solid rgb(203, 203, 203);
+  margin-top: 15px;
+  padding-top: 15px;
+  .dashboard {
+    
     display: flex;
-    align-items: center;
     flex-direction: column;
-    .div-titulo-dashboard {
-      height: 5%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px 0;
-      h4 {
-        font-size: 14px;
-        font-weight: 500;
-        color: $color-font;
-        padding: 0;
-        margin: 0;
-      }
+    align-items: center;
+    justify-content: center;
     }
 
   }
-}
+
