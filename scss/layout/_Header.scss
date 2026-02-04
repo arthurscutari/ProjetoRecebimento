@@ -1,13 +1,13 @@
 @use "../base/Variabels" as *;
 
 header {
-    position: sticky;
-     top: 0;
-       z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 15px;
   box-sizing: border-box;
   gap: 5px;
-  height: 45%;
+  height: 25dvh;
   width: 95%;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ header {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
-     .div-container-status {
+     .div-header-package {
 
       flex:1;
       height: 50%;
@@ -24,7 +24,8 @@ header {
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      .div-image-status {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      .div-header-package-icon {
 
         height: 100%;
         width: 60px;
@@ -37,12 +38,12 @@ header {
 
           height: 28px;
           width: 28px;
-          color: $color-white;
+          color: $color-font;
           
         }
         
       }
-      .div-title-status{
+      .div-header-package-info{
 
         height: 100%;
         flex: 1;
@@ -55,21 +56,21 @@ header {
   
         p {
           font-size: 16px;
-          color: $color-white;
+          color: $color-font;
           margin: 0;
           padding: 0;
           font-weight: 400;
         }
         h3 {
           font-size: 18px;
-          color: $color-white;
+          color: $color-background;
           margin: 0;
           padding: 0;
           font-weight: 700;
         }
       }
      }
-     .div-status-doca-ausente {
+     .div-header-doc-lost {
       flex: 1;
       height: 50%;
       width: 100%;
@@ -77,12 +78,13 @@ header {
       align-items: center;
       justify-content: space-between;
       gap: 5px;
-      .div-container-doca-ausente {
+      .div-header-container-doc-lost {
         height: 100%;
         width: 50%;
         display: flex;
         align-items: center;
-        .div-image-status-doca-ausente {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        .div-header-icon-doc-lost {
           width: 60px;
           height: 100%;
           display: flex;
@@ -92,10 +94,10 @@ header {
 
           height: 28px;
           width: 28px;
-          color: $color-white;
+          color: $color-font;
         }
         }
-        .div-status-info {
+        .div-header-doc-lost-info {
         height: 100%;
         flex: 1;
         display: flex;
@@ -107,14 +109,14 @@ header {
   
         p {
           font-size: 16px;
-          color: $color-white;
+          color: $color-font;
           margin: 0;
           padding: 0;
           font-weight: 400;
         }
         h3 {
           font-size: 18px;
-          color: $color-white;
+          color: $color-background;
           margin: 0;
           padding: 0;
           font-weight: 700;
@@ -123,7 +125,7 @@ header {
         }
       }
      }
-      .div-btn-header {
+      .div-header-button {
         flex: 1;
     height: 25%;
     width: 100%;
@@ -132,19 +134,6 @@ header {
     justify-content: center;
   }
 
-.green {
 
- background-color: #00b894;
 
-}
-
-.orange {
-
-  background-color: #e17055;
-}
-
-.blue {
-
-    background-color: #0984e3;
-}
 }

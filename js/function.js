@@ -1,43 +1,16 @@
-import {fecharModal} from "./function.js";
-//Algoritimo para inserir os dados no LocalStorge
 
-const form = document.getElementById("modal-form");
-const banco = JSON.parse(localStorage.getItem("motoristas")) || [];
-const modal = document.querySelector(".modal-overlay")
+//Funções para abrir e fechar modal
 
-form.addEventListener('submit', (e) => { //Usar submit, pois estamos usando o FORM.
+export function abrirModal (modal) {
 
-    
-    
-    e.preventDefault(); // Algoritmo para evitar que o navegador resete as informações.
+    modal.classList.remove ("hidden")
+}
+export function fecharModal (modal) {
 
-   
+    modal.classList.add ("hidden")
+}
 
-    const motorista = {
-        doca: document.getElementById("select-doca").value, 
-        qtdPacotes: document.getElementById("qtd-pacotes").value,
-        qtdAusentes: document.getElementById("qtd-ausentes").value
-    }
-
-    const lista = JSON.parse(localStorage.getItem("motoristas")) || [] // Ele irá procurar a lista "motoristas" se não achar vira um array valido vazio
-    lista.push(motorista); // Add o array motorista na tabela.
-    localStorage.setItem("motoristas", JSON.stringify(lista)); // Registra o array dentro do localStorage
-
-
-    atualizarDashboard();
-
-    fecharModal(modal);
-
-    form.reset();
-
-})
-
-
-///////////////////////////////////////////
-
-//Algortimo para mostrar no HTML as informações do banco de Dados
-
-function atualizarDashboard() {
+export function atualizarDashboard() {
 
 const banco = JSON.parse(localStorage.getItem("motoristas")) || [];
 
@@ -286,26 +259,11 @@ totalAusentesRecebidos.textContent = pacotesTotaisAusentes
 
 }
 
-// Código para pegar todos os valores de pacotes e ausentes e mostrar na tela
-
-const inputsNumericos = document.querySelectorAll(".input-geral");
-
-inputsNumericos.forEach(input => {
-  input.addEventListener("input", () => {
-    input.value = input.value.replace(/\D/g, "");
-  });
-});
-
-// Código para resetar o banco de dados
-
-const btnResetar = document.getElementById("btn-resetar-baco");
-
-btnResetar.addEventListener('click', () =>{
-
-    resetarBancoMotoristas();
-})
-
-function resetarBancoMotoristas() {
-  localStorage.removeItem("motoristas");
+export function openCard (expand) {
+    expand.classList.toggle("expand")
 }
+export function showCard (show) {
 
+    show.classList.toggle("show")
+
+}
