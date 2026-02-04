@@ -18,7 +18,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 15px;
+  padding: 5px;
   box-sizing: border-box;
   gap: 5px;
   height: 25dvh;
@@ -28,7 +28,6 @@ header {
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 header .div-header-package {
   flex: 1;
@@ -41,7 +40,7 @@ header .div-header-package {
 }
 header .div-header-package .div-header-package-icon {
   height: 100%;
-  width: 60px;
+  width: 50px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -70,7 +69,7 @@ header .div-header-package .div-header-package-info p {
   font-weight: 400;
 }
 header .div-header-package .div-header-package-info h3 {
-  font-size: 18px;
+  font-size: 20px;
   color: #EE4D2D;
   margin: 0;
   padding: 0;
@@ -85,26 +84,26 @@ header .div-header-doc-lost {
   justify-content: space-between;
   gap: 5px;
 }
-header .div-header-doc-lost .div-header-container-doc-lost {
+header .div-header-doc-lost .div-header-container-lost {
   height: 100%;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-header .div-header-doc-lost .div-header-container-doc-lost .div-header-icon-doc-lost {
-  width: 60px;
+header .div-header-doc-lost .div-header-container-lost .div-header-icon-doc-lost {
+  width: 50px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .div-header-doc-lost .div-header-container-doc-lost .div-header-icon-doc-lost svg {
+header .div-header-doc-lost .div-header-container-lost .div-header-icon-doc-lost svg {
   height: 28px;
   width: 28px;
   color: #113366;
 }
-header .div-header-doc-lost .div-header-container-doc-lost .div-header-doc-lost-info {
+header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info {
   height: 100%;
   flex: 1;
   display: flex;
@@ -114,14 +113,57 @@ header .div-header-doc-lost .div-header-container-doc-lost .div-header-doc-lost-
   justify-content: center;
   flex-direction: column;
 }
-header .div-header-doc-lost .div-header-container-doc-lost .div-header-doc-lost-info p {
+header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info p {
   font-size: 16px;
   color: #113366;
   margin: 0;
   padding: 0;
   font-weight: 400;
 }
-header .div-header-doc-lost .div-header-container-doc-lost .div-header-doc-lost-info h3 {
+header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info h3 {
+  font-size: 18px;
+  color: #EE4D2D;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+header .div-header-doc-lost .div-header-container-doc {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+header .div-header-doc-lost .div-header-container-doc .div-header-icon-doc-lost {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .div-header-doc-lost .div-header-container-doc .div-header-icon-doc-lost svg {
+  height: 28px;
+  width: 28px;
+  color: #113366;
+}
+header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info p {
+  font-size: 16px;
+  color: #113366;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info h3 {
   font-size: 18px;
   color: #EE4D2D;
   margin: 0;
@@ -456,7 +498,7 @@ main .dashboard {
 }
 .dashboard-card .dashboard-card-container-expand .dashboard-card-expand-employee {
   height: 100%;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -481,7 +523,7 @@ main .dashboard {
 }
 .dashboard-card .dashboard-card-container-expand .dashboard-card-expand-package {
   height: 100%;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
