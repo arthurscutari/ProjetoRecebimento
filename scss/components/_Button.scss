@@ -48,3 +48,23 @@
     height: 60px;
     width: 100%;
 }
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    background-color: $color-background;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-border {
+
+    background-color: transparent;
+    border: 1px solid $color-background;
+    color: $color-background;
+}

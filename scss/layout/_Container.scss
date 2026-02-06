@@ -1,6 +1,6 @@
 @use "../base/Variabels" as *;
 
-main {  
+.dashboard-main {  
   background-color: rgb(232, 230, 230);
   height: 80%;
   width: 95%;
@@ -17,4 +17,12 @@ main {
     }
 
   }
+.login-main {
+  height: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
+}
