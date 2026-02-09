@@ -1,3 +1,4 @@
+/*
 import {fecharModal} from "./function.js";
 //Algoritimo para inserir os dados no LocalStorge
 
@@ -308,4 +309,4 @@ btnResetar.addEventListener('click', () =>{
 function resetarBancoMotoristas() {
   localStorage.removeItem("motoristas");
 }
-
+*/

@@ -1,7 +1,7 @@
 
 //Funções para abrir e fechar modal
 
-export function abrirModal (modal) {
+/*export function abrirModal (modal) {
 
     modal.classList.remove ("hidden")
 }
@@ -266,4 +266,4 @@ export function showCard (show) {
 
     show.classList.toggle("show")
 
-}
+}*/

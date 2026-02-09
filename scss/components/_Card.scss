@@ -259,3 +259,99 @@
     }
 }   
 
+.dashboard-card-kpi {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+     .dashboard-card-kpi-info {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      box-sizing: border-box;
+      h1 {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        color: $color-font;
+      }
+      p {
+
+        margin: 0;
+        padding-left: 10px;
+        font-size: 16px;
+        color: $color-background;
+      }
+     }
+      .dashboard-card-kpi-icon {
+        height: 100%;
+      width: 30%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 10px;
+        box-sizing: border-box;
+      svg {
+        height: 22px;
+        width: 22px;
+        color: $color-background;
+      }
+      }
+
+  }
+
+.dashboard-navigation-card {
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px ;
+    .dashboard-navigation-card-icon {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg
+        {
+            height: 22px;
+            width: 22px;
+            color: $color-background;
+        }
+    }
+     .dashboard-navigation-card-title {
+
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        p {
+
+        margin: 0;
+        padding-left: 10px;
+        font-size: 16px;
+        color: $color-font;
+        }
+     }
+     .dashboard-navigation-card-button {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 22px;
+            width: 22px;
+            color: $color-background;
+        }
+     }
+}

@@ -1,11 +1,11 @@
-import { abrirModal, atualizarDashboard, fecharModal, openCard, showCard } from "./function.js";
+/*import { abrirModal, atualizarDashboard, fecharModal, openCard, showCard } from "./function.js";
 
 // Algoritmo para abrir e fechar o modal
 
 const btnAbrirModal = document.getElementById("btn-open-modal");
 const btnFecharModal = document.getElementById("btn-close-modal");
 const modal = document.querySelector(".modal-overlay");
-
+const btnLogin = document.getElementById("login-button")
 
 
 
@@ -36,4 +36,18 @@ cards.forEach((card) => {
     showCard(show);
   });
 });
+*/
 
+const btnLogin = document.getElementById("button-login");
+if (btnLogin) {
+  btnLogin.addEventListener("click", () => {
+    window.location.href = "pages/dashboard.html";
+  });
+}
+
+const buttonLogOut = document.getElementById("button-logout");
+if (buttonLogOut) {
+  buttonLogOut.addEventListener("click", () => {
+    window.location.href = "../../index.html";
+  });
+}

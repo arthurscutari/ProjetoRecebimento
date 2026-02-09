@@ -1,17 +1,15 @@
 @charset "UTF-8";
 .dashboard-body {
-  min-height: 100dvh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   font-family: "Roboto";
-  background-color: rgb(232, 230, 230);
+  background-color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-}
-.dashboard-body p {
-  padding: 0;
+  overflow: hidden;
   margin: 0;
+  padding: 0;
 }
 
 .login-body {
@@ -26,171 +24,30 @@
   padding: 0;
   overflow: hidden;
   font-family: "Roboto";
+  gap: 30px;
 }
 
 .dashboard-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 5px;
-  box-sizing: border-box;
-  gap: 5px;
-  height: 25dvh;
+  height: 5%;
   width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgb(232, 230, 230);
-}
-.dashboard-header .div-header-package {
-  flex: 1;
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.dashboard-header .div-header-package .div-header-package-icon {
-  height: 100%;
-  width: 50px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-header .div-header-package .div-header-package-icon svg {
-  height: 28px;
-  width: 28px;
-  color: #113366;
-}
-.dashboard-header .div-header-package .div-header-package-info {
-  height: 100%;
-  flex: 1;
-  display: flex;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.dashboard-header .div-header-package .div-header-package-info p {
-  font-size: 16px;
-  color: #113366;
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
-  font-weight: 400;
-}
-.dashboard-header .div-header-package .div-header-package-info h3 {
-  font-size: 20px;
-  color: #EE4D2D;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-.dashboard-header .div-header-doc-lost {
-  flex: 1;
-  height: 50%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.dashboard-header .div-header-doc-lost .div-header-container-lost {
-  height: 100%;
-  width: 60%;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-lost .div-header-icon-doc-lost {
-  width: 50px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-lost .div-header-icon-doc-lost svg {
-  height: 28px;
-  width: 28px;
-  color: #113366;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info {
-  height: 100%;
-  flex: 1;
-  display: flex;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info p {
+.dashboard-header p {
+  padding-left: 15px;
+  margin: 0;
   font-size: 16px;
   color: #113366;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
 }
-.dashboard-header .div-header-doc-lost .div-header-container-lost .div-header-doc-lost-info h3 {
-  font-size: 18px;
+.dashboard-header svg {
+  padding-right: 15px;
+  height: 22px;
+  width: 22px;
   color: #EE4D2D;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc .div-header-icon-doc-lost {
-  width: 50px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc .div-header-icon-doc-lost svg {
-  height: 28px;
-  width: 28px;
-  color: #113366;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info {
-  height: 100%;
-  flex: 1;
-  display: flex;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info p {
-  font-size: 16px;
-  color: #113366;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-}
-.dashboard-header .div-header-doc-lost .div-header-container-doc .div-header-doc-lost-info h3 {
-  font-size: 18px;
-  color: #EE4D2D;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-.dashboard-header .div-header-button {
-  flex: 1;
-  height: 25%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .login-header {
@@ -224,20 +81,12 @@
   margin: 0;
 }
 
-.dashboard-main {
-  background-color: rgb(232, 230, 230);
-  height: 80%;
+.dashboard-section {
+  height: 30%;
   width: 95%;
-  overflow-y: auto;
-  border-top: 1px solid rgb(203, 203, 203);
-  margin-top: 15px;
-  padding-top: 15px;
-}
-.dashboard-main .dashboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 .login-main {
@@ -246,6 +95,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
+}
+
+.dashboard-navigation {
+  height: 55%;
+  width: 95%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
@@ -444,6 +302,29 @@
   background-color: transparent;
   border: 1px solid #EE4D2D;
   color: #EE4D2D;
+}
+
+.dashboard-navigation-button {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EE4D2D;
+  border-radius: none;
+}
+.dashboard-navigation-button svg {
+  height: 22px;
+  width: 22px;
+  color: #fff;
+  margin-right: 10px;
+}
+.dashboard-navigation-button p {
+  font-size: 18px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
 .card-input {
@@ -669,6 +550,94 @@
   margin-left: 10px;
 }
 
+.dashboard-card-kpi {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dashboard-card-kpi .dashboard-card-kpi-info {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.dashboard-card-kpi .dashboard-card-kpi-info h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: #113366;
+}
+.dashboard-card-kpi .dashboard-card-kpi-info p {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #EE4D2D;
+}
+.dashboard-card-kpi .dashboard-card-kpi-icon {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.dashboard-card-kpi .dashboard-card-kpi-icon svg {
+  height: 22px;
+  width: 22px;
+  color: #EE4D2D;
+}
+
+.dashboard-navigation-card {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+}
+.dashboard-navigation-card .dashboard-navigation-card-icon {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-navigation-card .dashboard-navigation-card-icon svg {
+  height: 22px;
+  width: 22px;
+  color: #EE4D2D;
+}
+.dashboard-navigation-card .dashboard-navigation-card-title {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboard-navigation-card .dashboard-navigation-card-title p {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #113366;
+}
+.dashboard-navigation-card .dashboard-navigation-card-button {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-navigation-card .dashboard-navigation-card-button svg {
+  height: 22px;
+  width: 22px;
+  color: #EE4D2D;
+}
+
 .input-geral {
   box-sizing: border-box;
   outline: none;
@@ -693,4 +662,5 @@
   border: none;
   box-sizing: border-box;
   outline: none;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
