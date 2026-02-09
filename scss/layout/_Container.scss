@@ -1,14 +1,6 @@
 @use "../base/Variabels" as *;
 
-.dashboard-section {  
-  
-  height: 30%;
-  width: 95%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px; 
-  
-  }
+
 .login-main {
   height: 50%;
   width: 90%;
@@ -18,12 +10,32 @@
   gap: 15px;
 
 }
+.dashboard-kpi {  
+  
+  height: 30%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px; 
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(163, 163, 163);
+  }
 .dashboard-navigation{
 
-  height: 55%;
+  
   width: 95%;
   margin-top: 15px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
+}
+.dashboard-form {
+
+ 
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+
 }
