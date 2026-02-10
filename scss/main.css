@@ -111,14 +111,14 @@
 .dashboard-navigation {
   width: 95%;
   margin-top: 15px;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .dashboard-form {
   width: 95%;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 15px;
   gap: 15px;
