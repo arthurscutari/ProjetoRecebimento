@@ -8,8 +8,8 @@
     display: flex;
 }*/
 .dashboard-body {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   font-family: "Roboto";
   background-color: #e0e0e0;
   display: flex;
@@ -21,8 +21,8 @@
 }
 
 .login-body {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@
 
 .login-header {
   height: 20%;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,8 +68,8 @@
   border-bottom: 1px solid #afafaf;
 }
 .login-header img {
-  height: 90px;
-  width: 180px;
+  height: 70px;
+  width: 130px;
   padding: 0;
   margin-bottom: 10px;
 }
@@ -91,7 +91,7 @@
 
 .login-main {
   height: 50%;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +99,7 @@
 }
 
 .dashboard-kpi {
-  height: 30%;
+  height: 20%;
   width: 95%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,7 +116,28 @@
   gap: 15px;
 }
 
-.dashboard-form {
+.dashboard-section-form {
+  height: 65%;
+  width: 95%;
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+.dashboard-section-form .dashboard-form {
+  height: 80%;
+  width: 100%;
+}
+.dashboard-section-form .dashboard-card-back {
+  height: 20%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-dock {
+  height: 65%;
   width: 95%;
   display: none;
   flex-direction: column;
@@ -222,7 +243,7 @@
 
 .login-form {
   height: 100%;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -235,18 +256,18 @@
   color: #113366;
   margin-top: 10px;
 }
-.login-form div {
+.login-form .login-div-input {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 15%;
+  height: 55px;
   box-sizing: border-box;
   display: flex;
   border: 1px solid rgb(149, 149, 149);
   border-radius: 5px;
   margin-bottom: 10px;
 }
-.login-form div svg {
+.login-form .login-div-input svg {
   height: 28px;
   width: 50px;
   color: #EE4D2D;
@@ -344,21 +365,45 @@
   margin: 0;
 }
 
+.button-back {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #EE4D2D;
+}
+.button-back svg {
+  height: 22px;
+  width: 22px;
+  color: #EE4D2D;
+  margin-right: 10px;
+}
+.button-back p {
+  font-size: 18px;
+  color: #EE4D2D;
+  padding: 0;
+  margin: 0;
+}
+
 .dashboard-card-kpi {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .dashboard-card-kpi .dashboard-card-kpi-info {
-  height: 100%;
-  width: 70%;
+  height: 50%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-sizing: border-box;
+  padding: 0 20px;
 }
 .dashboard-card-kpi .dashboard-card-kpi-info h1 {
   font-size: 30px;
@@ -366,25 +411,25 @@
   padding: 0;
   color: #113366;
 }
-.dashboard-card-kpi .dashboard-card-kpi-info p {
+.dashboard-card-kpi .dashboard-card-kpi-info svg {
+  height: 22px;
+  width: 22px;
+  color: #EE4D2D;
+}
+.dashboard-card-kpi .dashboard-card-kpi-icon {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.dashboard-card-kpi .dashboard-card-kpi-icon p {
   margin: 0;
   padding-left: 10px;
   font-size: 16px;
   color: #113366;
-}
-.dashboard-card-kpi .dashboard-card-kpi-icon {
-  height: 100%;
-  width: 30%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 10px;
-  box-sizing: border-box;
-}
-.dashboard-card-kpi .dashboard-card-kpi-icon svg {
-  height: 22px;
-  width: 22px;
-  color: #EE4D2D;
 }
 
 .dashboard-navigation-card {
@@ -438,6 +483,7 @@
   display: flex;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 .dashboard-form-card .dashboard-form-icon {
   height: 100%;
@@ -486,25 +532,136 @@
   color: #fff;
 }
 
-.dashboard-form-card-button-back {
+.dashboard-dock-card {
   height: 60px;
   width: 100%;
-  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dashboard-dock-card .dashboard-dock-card-close {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-icon {
+  height: 100%;
+  width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #EE4D2D;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.dashboard-form-card-button-back svg {
-  height: 22px;
-  width: 22px;
-  color: #EE4D2D;
-  margin-right: 10px;
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-icon svg {
+  color: #113366;
+  height: 30px;
+  width: 30px;
 }
-.dashboard-form-card-button-back p {
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-icon-title {
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-icon-title h4 {
   font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  color: #113366;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-icon-title p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
   color: #EE4D2D;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-type {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-type p {
+  font-size: 16px;
+  color: #113366;
+  font-style: italic;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.dashboard-dock-card .dashboard-dock-card-close .dashboard-dock-card-info p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #113366;
+}
+.dashboard-dock-card .dashboard-dock-card-expand {
+  height: 60px;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-employer {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-employer h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #113366;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-employer p {
+  padding: 3px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #EE4D2D;
+  color: #113366;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-info {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-info .dashboard-dock-card-expand-info-title {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-info .dashboard-dock-card-expand-info-title h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #113366;
+  width: 140px;
+}
+.dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-info .dashboard-dock-card-expand-info-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #EE4D2D;
+  font-style: italic;
 }
 
 .login-input {

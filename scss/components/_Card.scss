@@ -1,47 +1,50 @@
 @use "../base/Variabels" as *;
 
-
+//Código CARD Dashboard
 .dashboard-card-kpi {
 
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
      .dashboard-card-kpi-info {
-      height: 100%;
-      width: 70%;
+      height: 50%;
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       box-sizing: border-box;
+      padding: 0 20px;
       h1 {
         font-size: 30px;
         margin: 0;
         padding: 0;
         color: $color-font;
       }
+      svg {
+        height: 22px;
+        width: 22px;
+        color: $color-background;
+        
+      }
+      
+     }
+      .dashboard-card-kpi-icon {
+        height: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 10px;
+      box-sizing: border-box;
       p {
 
         margin: 0;
         padding-left: 10px;
         font-size: 16px;
         color: $color-font;
-      }
-     }
-      .dashboard-card-kpi-icon {
-        height: 100%;
-      width: 30%;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding-top: 10px;
-        box-sizing: border-box;
-      svg {
-        height: 22px;
-        width: 22px;
-        color: $color-background;
       }
       }
 
@@ -98,11 +101,12 @@
      }
 }
 .dashboard-form-card {
-  height: 70px;
+   height: 70px;
     width: 100%;
     display: flex;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 5px ;
+    margin-bottom: 15px;
     .dashboard-form-icon{
 
       height: 100%;
@@ -131,7 +135,6 @@
       }
     }
 }
-
 .dashboard-form-card-button-send {
 
   height: 60px;
@@ -152,24 +155,149 @@
       color:#fff
     }
   }
-  .dashboard-form-card-button-back {
+  //Códgio CARD Docas
 
-  height: 60px;
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $color-background;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  svg {
-    height: 22px;
-    width: 22px;
-    color: $color-background;
-    margin-right: 10px;
-  }
-    p {
-      font-size: 16px;
-      color: $color-background;
+  .dashboard-dock-card {
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  .dashboard-dock-card-close{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .dashboard-dock-card-icon {
+      height: 100%;
+      width: 44px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $color-font;
+        height: 30px;
+        width: 30px;
+      }
     }
+    .dashboard-dock-card-icon-title{
+      height: 100%;
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h4 {
+          font-size: 16px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        color: $color-font;
+      }
+      p {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        color: $color-background;
+      }
+    }
+    .dashboard-dock-card-type{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 16px;
+        color: $color-font;
+        font-style: italic;
+      }
+    }
+    .dashboard-dock-card-info {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+
+      p {
+        font-size: 22px;
+        font-weight: 700;
+        color: $color-font;
+      }
+    }
+  }
+  .dashboard-dock-card-expand {
+     height: 60px;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+   
+    .dashboard-dock-card-expand-employer {
+
+      height: 100%;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+         font-weight: 400;
+        color: $color-font;
+
+      }
+
+      p {
+        padding: 3px;
+        margin:0;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid $color-background;
+        color: $color-font;
+      }
+    }
+    .dashboard-dock-card-expand-info {
+
+      height: 100%;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .dashboard-dock-card-expand-info-title {
+
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h4 {
+
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 400;
+          color: $color-font;
+          width: 140px;
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 400;
+          color: $color-background;
+          font-style: italic;
+        }
+      }
+    }
+  }
+    
   }

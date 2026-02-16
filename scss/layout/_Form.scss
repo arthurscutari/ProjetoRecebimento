@@ -3,10 +3,10 @@
 .login-form {
 
     height: 100%;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-
+    
     
     label {
         display: flex;
@@ -17,11 +17,11 @@
         color: $color-font;
         margin-top: 10px;
     }
-    div {
+    .login-div-input {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: 55px;
         box-sizing: border-box;
         display: flex;
         border: 1px solid rgb(149, 149, 149);
