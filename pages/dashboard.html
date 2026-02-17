@@ -196,43 +196,79 @@
             </div>
         </div>
     </section>
-    <section class="dashboard-dock">
-        <div class="dashboard-dock-card">
-            <div class="dashboard-dock-card-close">
-                <div class="dashboard-dock-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-                    </svg>
-                </div>
-                <div class="dashboard-dock-card-icon-title">
-                    <h4>Doca</h4>
-                    <p>1</p>
-                </div>
-                <div class="dashboard-dock-card-type">
-                    <p>Interna</p>
-                </div>
-                <div class="dashboard-dock-card-info">
-                    <p>0%</p>
-                </div>
-            </div>
-            <div class="dashboard-dock-card-expand">
-                <div class="dashboard-dock-card-expand-employer">
-                    <h4>Colaborador</h4>
-                    <p>Colaborador 1</p>
-                </div>
-                <div class="dashboard-dock-card-expand-info">
-                    <div class="dashboard-dock-card-expand-info-title">
-                        <h4>Pacotes recebidos</h4>
-                        <p>0</p>
+    <section class="dashboard-section-dock">
+        <div class="dashboard-dock">
+            <div class="dashboard-dock-card">
+                <div class="dashboard-dock-card-close">
+                    <div class="dashboard-dock-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                        </svg>
                     </div>
-                    <div class="dashboard-dock-card-expand-info-title">
-                        <h4>Pacotes ausentes</h4>
-                        <p>0</p>
+                    <div class="dashboard-dock-card-icon-title">
+                        <h4>Doca</h4>
+                        <p>1</p>
+                    </div>
+                    <div class="dashboard-dock-card-type">
+                        <p>Interna</p>
+                    </div>
+                    <div class="dashboard-dock-card-info">
+                        <p>0%</p>
+                    </div>
+                </div>
+                <div class="dashboard-dock-card-expand">
+                    <div class="dashboard-dock-card-expand-employer">
+                        <h4>Colaborador</h4>
+                        <p>Colaborador 1</p>
+                    </div>
+                    <div class="dashboard-dock-card-expand-info">
+                        <div class="dashboard-dock-card-expand-info-title">
+                            <h4>Pacotes recebidos</h4>
+                            <p>0</p>
+                        </div>
+                        <div class="dashboard-dock-card-expand-info-title">
+                            <h4>Pacotes ausentes</h4>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="dashboard-card-back">
+            <div class="button-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+            <p>Voltar</p>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-section-driver">
+        <div class="dashboard-driver">
+            <div class="dashboard-driver-card">
+                <div class="dashboard-driver-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </div>
+                <div class="dashboard-driver-card-select">
+                    <label for="select-motorista">Motorista</label>
+                    <select name="" id="select-motorista">
+                        <option value="">Motorista 1</option>
+                        <option value="">Motorista 2</option>
+                    </select>
+                </div>
+                <div class="dashboard-driver-card-button">
+                    <div class="dashboard-driver-button">
+                        <p>Procurar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-driver-profile">
+                
+            </div>
+        </div>
+         <div class="dashboard-card-back">
             <div class="button-back">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>

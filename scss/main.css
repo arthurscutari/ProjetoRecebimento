@@ -111,7 +111,7 @@
 .dashboard-navigation {
   width: 95%;
   margin-top: 15px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
 }
@@ -136,7 +136,7 @@
   justify-content: center;
 }
 
-.dashboard-dock {
+.dashboard-section-dock {
   height: 65%;
   width: 95%;
   display: none;
@@ -144,10 +144,30 @@
   margin-top: 15px;
   gap: 15px;
 }
+.dashboard-section-dock .dashboard-dock {
+  height: 100%;
+  width: 100%;
+}
 
-.div-cabecalho-dashboard {
-  background-color: #EE4D2D;
-  color: #bdc3c7;
+.dashboard-section-driver {
+  height: 65%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+.dashboard-section-driver .dashboard-driver {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dashboard-section-driver .dashboard-driver .dashboard-driver-profile {
+  height: 80%;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .modal-overlay {
@@ -374,6 +394,7 @@
   justify-content: center;
   background-color: transparent;
   border: 1px solid #EE4D2D;
+  box-sizing: border-box;
 }
 .button-back svg {
   height: 22px;
@@ -384,6 +405,22 @@
 .button-back p {
   font-size: 18px;
   color: #EE4D2D;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-driver-button {
+  height: 70%;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #EE4D2D;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.dashboard-driver-button p {
+  font-size: 16px;
+  color: #fff;
   padding: 0;
   margin: 0;
 }
@@ -662,6 +699,57 @@
   font-weight: 400;
   color: #EE4D2D;
   font-style: italic;
+}
+
+.dashboard-driver-card {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dashboard-driver-card .dashboard-driver-card-icon {
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-driver-card .dashboard-driver-card-icon svg {
+  color: #113366;
+  height: 30px;
+  width: 30px;
+}
+.dashboard-driver-card .dashboard-driver-card-select {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard-driver-card .dashboard-driver-card-select label {
+  font-size: 16px;
+  color: #113366;
+  padding-left: 15px;
+  margin: 0;
+}
+.dashboard-driver-card .dashboard-driver-card-select select {
+  box-sizing: border-box;
+  height: 28px;
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid #EE4D2D;
+  padding-left: 10px;
+  margin-left: 10px;
+  outline: none;
+}
+.dashboard-driver-card .dashboard-driver-card-button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-input {

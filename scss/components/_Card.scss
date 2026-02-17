@@ -49,7 +49,6 @@
       }
 
   }
-
 .dashboard-navigation-card {
 
     height: 60px;
@@ -163,7 +162,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   .dashboard-dock-card-close{
     height: 60px;
     width: 100%;
@@ -172,7 +171,6 @@
     .dashboard-dock-card-icon {
       height: 100%;
       width: 44px;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -300,4 +298,58 @@
     }
   }
     
+  }
+ .dashboard-driver-card {
+
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+     .dashboard-driver-card-icon {
+      height: 100%;
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $color-font;
+        height: 30px;
+        width: 30px;
+      }
+     }
+     .dashboard-driver-card-select{
+
+      height: 100%;
+      width: 60%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+            box-sizing: border-box;
+
+      label {
+        font-size: 16px;
+        color: $color-font;
+        padding-left: 15px;
+        margin: 0;
+      }
+      select {
+
+        box-sizing: border-box;
+        height: 28px;
+        width: 90%;
+        background-color: transparent;
+        border: 1px solid $color-background;
+        padding-left: 10px;
+        margin-left: 10px;
+        outline: none; 
+      }
+     }
+     .dashboard-driver-card-button{
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+     }
   }
