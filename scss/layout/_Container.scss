@@ -25,7 +25,7 @@
   
   width: 95%;
   margin-top: 15px;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 15px;
 }
@@ -68,7 +68,7 @@
 .dashboard-section-driver {
   height: 65%;
   width: 95%;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 15px;
   gap: 15px;
@@ -84,7 +84,74 @@
       height: 80%;
       width: 100%;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-      
+      .dashboard-driver-profile-row {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        .dashboard-driver-profile-row-name {
+          height: 100%;
+          width: 50%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          flex-direction: column;
+          padding-left: 10px;
+          h5 {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            padding-left: 5px;
+            color: $color-font;
+          }
+          p {
+            width: 80%;
+             font-size: 16px;
+            font-weight: 400;
+            padding: 7px;
+            margin: 0;
+            padding-left: 5px;
+            color: $color-background;
+            background-color: rgb(216, 216, 216);
+            display: flex;
+            justify-content: flex-end;
+
+          }
+        }
+      }
+       .dashboard-driver-profile-col {
+          height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box; 
+        justify-content: space-evenly;
+        padding-left: 20px;
+         h5 {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            padding-left: 5px;
+            color: $color-font;
+            padding-left: 5px;
+          }
+          p {
+            width: 90%;
+             font-size: 16px;
+            font-weight: 400;
+            padding: 7px;
+            margin: 0;
+            padding-left: 5px;
+            color: $color-background;
+            background-color: rgb(216, 216, 216);
+            display: flex;
+            justify-content: flex-end;
+          }
+       }
     }
   }
 }
