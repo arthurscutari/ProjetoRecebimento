@@ -1,12 +1,11 @@
-/*.hidden {
-
-    display: none;
+.show {
+  display: flex;
 }
 
-.show {
+.hidden {
+  display: none !important;
+}
 
-    display: flex;
-}*/
 .dashboard-body {
   height: 100dvh;
   width: 100dvw;
@@ -18,6 +17,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
 }
 
 .login-body {
@@ -117,7 +117,7 @@
 }
 
 .dashboard-section-form {
-  height: 65%;
+  height: 60%;
   width: 95%;
   display: none;
   flex-direction: column;
@@ -128,16 +128,9 @@
   height: 80%;
   width: 100%;
 }
-.dashboard-section-form .dashboard-card-back {
-  height: 20%;
-  width: 100%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
 
 .dashboard-section-dock {
-  height: 65%;
+  height: 60%;
   width: 95%;
   display: none;
   flex-direction: column;
@@ -150,7 +143,7 @@
 }
 
 .dashboard-section-driver {
-  height: 65%;
+  height: 60%;
   width: 95%;
   display: none;
   flex-direction: column;
@@ -235,6 +228,44 @@
   background-color: rgb(216, 216, 216);
   display: flex;
   justify-content: flex-end;
+}
+
+.dashboard-section-scale {
+  height: 60%;
+  width: 95%;
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+.dashboard-section-scale .dashboard-scale {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.dashboard-section-storage {
+  height: 60%;
+  width: 95%;
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+.dashboard-section-storage .dashboard-storage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .modal-overlay {
@@ -514,6 +545,9 @@
   margin: 0;
   padding: 0;
   color: #113366;
+  display: flex;
+  width: 65%;
+  justify-content: flex-end;
 }
 .dashboard-card-kpi .dashboard-card-kpi-info svg {
   height: 22px;
@@ -817,6 +851,134 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.dashboard-scale-card {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dashboard-scale-card .dashboard-scale-card-icon {
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-scale-card .dashboard-scale-card-icon svg {
+  color: #113366;
+  height: 30px;
+  width: 30px;
+}
+.dashboard-scale-card .dashboard-scale-card-icon-title {
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dashboard-scale-card .dashboard-scale-card-icon-title h4 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  color: #113366;
+}
+.dashboard-scale-card .dashboard-scale-card-icon-title p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  color: #EE4D2D;
+}
+.dashboard-scale-card .dashboard-scale-card-type {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-scale-card .dashboard-scale-card-type select {
+  width: 80%;
+  height: 26px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: 1px solid #EE4D2D;
+  font-size: 16px;
+  padding-left: 5px;
+  color: #113366;
+}
+.dashboard-scale-card .dashboard-scale-card-info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  box-sizing: border-box;
+}
+.dashboard-scale-card .dashboard-scale-card-info p {
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #EE4D2D;
+}
+
+.dashboard-storage-card {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dashboard-storage-card .dashboard-storage-card-icon {
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-storage-card .dashboard-storage-card-icon svg {
+  color: #113366;
+  height: 30px;
+  width: 30px;
+}
+.dashboard-storage-card .dashboard-storage-card-info {
+  height: 100px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dashboard-storage-card .dashboard-storage-card-info h4 {
+  font-size: 16px;
+  color: #EE4D2D;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.dashboard-storage-card .dashboard-storage-card-info p {
+  font-size: 16px;
+  color: #113366;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-storage-card .dashboard-storage-card-info button {
+  height: 35px;
+  width: 70px;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: #EE4D2D;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
 }
 
 .login-input {

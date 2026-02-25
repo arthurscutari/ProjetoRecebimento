@@ -22,6 +22,9 @@
         margin: 0;
         padding: 0;
         color: $color-font;
+        display: flex;
+        width: 65%;
+        justify-content: flex-end;
       }
       svg {
         height: 22px;
@@ -299,6 +302,8 @@
   }
     
   }
+  //Códgio CARD motorista
+
  .dashboard-driver-card {
 
     height: 75px;
@@ -352,4 +357,135 @@
       justify-content: center;
       align-items: center;
      }
+  }
+  .dashboard-scale-card {
+
+    height: 60px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    .dashboard-scale-card-icon {
+      height: 100%;
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $color-font;
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .dashboard-scale-card-icon-title{
+      height: 100%;
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h4 {
+          font-size: 16px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        color: $color-font;
+      }
+      p {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        color: $color-background;
+      }
+    }
+    .dashboard-scale-card-type{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      select {
+
+        width: 80%;
+        height: 26px;
+        appearance: none;
+        outline: none;
+        border: 1px solid $color-background;
+        font-size: 16px;
+        padding-left: 5px;
+        color: $color-font;
+      }
+    }
+    .dashboard-scale-card-info {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+              
+      box-sizing: border-box;
+      p {
+        padding: 10px 12px;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+background-color: $color-background;
+      }
+    }
+    
+  
+    } 
+  .dashboard-storage-card {
+     height: 100px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    .dashboard-storage-card-icon {
+        height: 100%;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: $color-font;
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .dashboard-storage-card-info {
+      height: 100px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h4 {
+        font-size: 16px;
+        color: $color-background;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+      }
+      p {
+        font-size: 16px;
+        color: $color-font;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        height: 35px;
+        width: 70px;
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        background-color: $color-background;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+      }
+    }
   }
