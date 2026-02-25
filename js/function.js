@@ -1,14 +1,5 @@
 
-//Funções para abrir e fechar modal
-
-/*export function abrirModal (modal) {
-
-    modal.classList.remove ("hidden")
-}
-export function fecharModal (modal) {
-
-    modal.classList.add ("hidden")
-}
+/*
 
 export function atualizarDashboard() {
 
@@ -230,14 +221,7 @@ if (qtdTotalPacotes10 > 0) {
 
 eficienca1.textContent =  eficienciaDoca1.toFixed(1) + "%";
 eficienca2.textContent =  eficienciaDoca2.toFixed(1) + "%";
-eficienca3.textContent =  eficienciaDoca3.toFixed(1) + "%";
-eficienca4.textContent =  eficienciaDoca4.toFixed(1) + "%";
-eficienca5.textContent =  eficienciaDoca5.toFixed(1) + "%";
-eficienca6.textContent =  eficienciaDoca6.toFixed(1) + "%";
-eficienca7.textContent =  eficienciaDoca7.toFixed(1) + "%";
-eficienca8.textContent =  eficienciaDoca8.toFixed(1) + "%";
-eficienca9.textContent =  eficienciaDoca9.toFixed(1) + "%";
-eficienca10.textContent =  eficienciaDoca10.toFixed(1) + "%";
+
 
 
 const totalPacotesRecebidos = document.getElementById("total-pacotes");
@@ -259,11 +243,4 @@ totalAusentesRecebidos.textContent = pacotesTotaisAusentes
 
 }
 
-export function openCard (expand) {
-    expand.classList.toggle("expand")
-}
-export function showCard (show) {
-
-    show.classList.toggle("show")
-
-}*/
+*/

@@ -33,7 +33,8 @@ form.addEventListener('submit', (e) => { //Usar submit, pois estamos usando o FO
 
 })
 
-
+*/
+/*
 ///////////////////////////////////////////
 
 //Algortimo para mostrar no HTML as informações do banco de Dados

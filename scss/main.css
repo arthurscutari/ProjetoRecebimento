@@ -6,6 +6,11 @@
   display: none !important;
 }
 
+.expand {
+  height: 120px;
+  box-sizing: border-box;
+}
+
 .dashboard-body {
   height: 100dvh;
   width: 100dvw;
@@ -140,6 +145,15 @@
 .dashboard-section-dock .dashboard-dock {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.dashboard-section-dock .dashboard-dock .dashboard-dock-card.expand .dashboard-dock-card-expand {
+  display: flex;
 }
 
 .dashboard-section-driver {
@@ -356,7 +370,7 @@
 }
 
 .expand {
-  height: 150px !important;
+  height: 120px !important;
 }
 
 .login-form {
@@ -746,6 +760,7 @@
   width: 100%;
   display: none;
   flex-direction: row;
+  border-top: 1px solid rgb(205, 205, 205);
 }
 .dashboard-dock-card .dashboard-dock-card-expand .dashboard-dock-card-expand-employer {
   height: 100%;
